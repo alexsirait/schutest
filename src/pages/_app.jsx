@@ -14,13 +14,26 @@ export default function App({ Component, pageProps }) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        // Wait for fonts to load
-        document.fonts.ready.then(() => {
-            // Add small delay to ensure everything is ready
-            setTimeout(() => {
-                setLoading(false);
-            }, 300);
-        });
+        // Safari-compatible font loading
+        const loadFonts = async () => {
+            try {
+                // Check if document.fonts API is available (Safari may not support fully)
+                if (document.fonts && document.fonts.ready) {
+                    await document.fonts.ready;
+                    setTimeout(() => setLoading(false), 300);
+                } else {
+                    // Fallback for Safari or browsers without Font Loading API
+                    // Use simple timeout instead
+                    setTimeout(() => setLoading(false), 800);
+                }
+            } catch (error) {
+                // If fonts API fails, just show content after delay
+                console.warn('Font loading API not supported, using fallback');
+                setTimeout(() => setLoading(false), 800);
+            }
+        };
+
+        loadFonts();
     }, []);
 
     return (
