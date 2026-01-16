@@ -19,10 +19,10 @@ export default function Header() {
 
                 <nav className="flex items-center gap-4">
                     <button
-                        className="p-2 hover:bg-slate-100 dark:hover:bg-[#393528] rounded-full transition-colors duration-200"
+                        className="w-10 h-10 flex items-center justify-center hover:bg-slate-100 dark:hover:bg-[#393528] rounded-full transition-colors duration-200"
                         aria-label="Benutzerkonto"
                     >
-                        <span className="material-symbols-outlined">account_circle</span>
+                        <span className="material-symbols-outlined text-2xl">account_circle</span>
                     </button>
                 </nav>
             </div>

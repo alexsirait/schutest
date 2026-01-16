@@ -16,7 +16,7 @@ export default function FAQAccordion({ items = [] }) {
                             expand_more
                         </span>
                     </summary>
-                    <div className="p-5 pt-0 text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed border-t border-slate-100 dark:border-[#393528]">
+                    <div className="p-5 pt-4 text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed border-t border-slate-100 dark:border-[#393528]">
                         {item.answer}
                     </div>
                 </details>

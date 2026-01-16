@@ -4,7 +4,7 @@
 
 export default function ContentSection() {
     return (
-        <section className="px-4 py-12 max-w-4xl">
+        <section className="px-4 py-12">
             <article>
                 <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">
                     Berufsunfähigkeit: Was Sie im Ernstfall wissen müssen
