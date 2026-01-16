@@ -7,8 +7,22 @@ import "@/styles/globals.css";
 import Head from "next/head";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import LoadingScreen from "@/components/ui/LoadingScreen";
+import { useState, useEffect } from "react";
 
 export default function App({ Component, pageProps }) {
+    const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+        // Wait for fonts to load
+        document.fonts.ready.then(() => {
+            // Add small delay to ensure everything is ready
+            setTimeout(() => {
+                setLoading(false);
+            }, 300);
+        });
+    }, []);
+
     return (
         <>
             <Head>
@@ -30,13 +44,17 @@ export default function App({ Component, pageProps }) {
                 />
             </Head>
 
-            <div className="dark min-h-screen flex flex-col">
-                <Header />
-                <main className="flex-1 max-w-screen-xl mx-auto w-full pb-12">
-                    <Component {...pageProps} />
-                </main>
-                <Footer />
-            </div>
+            {loading ? (
+                <LoadingScreen />
+            ) : (
+                <div className="dark min-h-screen flex flex-col">
+                    <Header />
+                    <main className="flex-1 max-w-screen-xl mx-auto w-full pb-12">
+                        <Component {...pageProps} />
+                    </main>
+                    <Footer />
+                </div>
+            )}
         </>
     );
 }
