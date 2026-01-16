@@ -7,40 +7,40 @@
   /* Brand Colors */
   --color-primary: #f4c025;
   --color-primary-hover: #daa91f;
-  
+
   /* Background Colors - Light Mode */
   --color-bg-light: #f8f8f5;
   --color-bg-card-light: #ffffff;
   --color-bg-muted-light: #f1f5f9;
-  
+
   /* Background Colors - Dark Mode */
   --color-bg-dark: #181611;
   --color-bg-card-dark: #27241b;
   --color-bg-muted-dark: #393528;
   --color-bg-footer-dark: #12110d;
-  
+
   /* Border Colors */
   --color-border-light: #e2e8f0;
   --color-border-dark: #393528;
   --color-border-card-dark: #544e3b;
-  
+
   /* Text Colors */
   --color-text-primary-light: #0f172a;
   --color-text-secondary-light: #475569;
   --color-text-primary-dark: #ffffff;
   --color-text-secondary-dark: #bab29c;
-  
+
   /* Accent Colors */
   --color-red: #ef4444;
   --color-green: #22c55e;
   --color-blue: #3b82f6;
-  
+
   /* Typography */
   --font-display: "Public Sans", system-ui, sans-serif;
-  
+
   /* Spacing */
   --spacing-container: clamp(1rem, 5vw, 2rem);
-  
+
   /* Transitions */
   --transition-fast: 150ms ease;
   --transition-normal: 300ms ease;
@@ -98,6 +98,26 @@ body.dark {
   outline-offset: 2px;
 }
 
+/* Material Symbols Icons - Prevent text fallback */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga';
+}
+
+
 /* ===================================
    COMPONENT STYLES
    =================================== */
@@ -142,6 +162,7 @@ details summary {
     opacity: 0;
     transform: translateY(10px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

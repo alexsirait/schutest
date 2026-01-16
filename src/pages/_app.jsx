@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
                     rel="stylesheet"
                 />
                 <link
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap"
+                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=block"
                     rel="stylesheet"
                 />
             </Head>
