@@ -43,22 +43,34 @@ export default function HomePage() {
             </Head>
 
             {/* Hero Search Section */}
-            <HeroSection onSearch={handleSearch} />
+            <div className="animate-fade-in-up">
+                <HeroSection onSearch={handleSearch} />
+            </div>
 
             {/* Category Filter Chips */}
-            <CategoriesSection onCategoryChange={handleCategoryChange} />
+            <div className="animate-fade-in-up animate-delay-100">
+                <CategoriesSection onCategoryChange={handleCategoryChange} />
+            </div>
 
             {/* Feature Topic Cards */}
-            <FeaturesSection onFeatureClick={handleFeatureClick} />
+            <div className="animate-fade-in-up animate-delay-200">
+                <FeaturesSection onFeatureClick={handleFeatureClick} />
+            </div>
 
             {/* Long-form SEO Content */}
-            <ContentSection />
+            <div className="animate-fade-in-up animate-delay-300">
+                <ContentSection />
+            </div>
 
             {/* Call-to-Action Banner */}
-            <CTASection />
+            <div className="animate-fade-in-scale animate-delay-300">
+                <CTASection />
+            </div>
 
             {/* FAQ Accordion */}
-            <FAQSection />
+            <div className="animate-fade-in-up animate-delay-400">
+                <FAQSection />
+            </div>
         </>
     );
 }
