@@ -10,9 +10,9 @@ const variants = {
     font-bold
   `,
   secondary: `
-    bg-slate-200 dark:bg-[#393528] 
+    bg-[#393528] 
     hover:bg-primary/20 
-    text-slate-900 dark:text-white
+    text-white
   `,
   dark: `
     bg-[#181611] hover:bg-[#27241b]

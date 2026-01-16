@@ -6,16 +6,16 @@ export default function ContentSection() {
     return (
         <section className="px-4 py-12">
             <article>
-                <h2 className="text-2xl font-bold mb-6 text-slate-900 dark:text-white">
+                <h2 className="text-2xl font-bold mb-6 text-white">
                     Berufsunfähigkeit: Was Sie im Ernstfall wissen müssen
                 </h2>
 
-                <div className="space-y-6 text-slate-700 dark:text-[#bab29c] leading-relaxed">
+                <div className="space-y-6 text-[#bab29c] leading-relaxed">
                     <p>
                         Die Berufsunfähigkeitsversicherung (BU) gehört zu den wichtigsten privaten Absicherungen. Doch wenn der Ernstfall eintritt und die Gesundheit die Ausübung des Berufs unmöglich macht, beginnt oft ein bürokratischer Hürdenlauf. Versicherer prüfen Anträge extrem akribisch, was häufig zu Verzögerungen oder Ablehnungen führt.
                     </p>
 
-                    <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                    <h3 className="text-xl font-semibold text-white">
                         Häufige Gründe für eine Ablehnung
                     </h3>
 
@@ -25,7 +25,7 @@ export default function ContentSection() {
 
                     {/* Expert Tip Box */}
                     <div className="bg-[#f4c025]/5 border-l-4 border-[#f4c025] p-6 rounded-r-lg my-8">
-                        <h4 className="font-bold text-slate-900 dark:text-white mb-2">
+                        <h4 className="font-bold text-white mb-2">
                             Experten-Tipp
                         </h4>
                         <p className="text-sm italic">

@@ -42,7 +42,7 @@ export default function FeatureCard({
     return (
         <article
             onClick={onClick}
-            className="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#544e3b] bg-white dark:bg-[#27241b] p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer"
+            className="flex flex-col gap-4 rounded-xl border border-[#544e3b] bg-[#27241b] p-6 hover:shadow-xl transition-all duration-300 group cursor-pointer"
             role="button"
             tabIndex={0}
             onKeyDown={(e) => e.key === "Enter" && onClick?.()}
@@ -53,7 +53,7 @@ export default function FeatureCard({
 
             <div className="flex flex-col gap-2">
                 <h2 className="text-lg font-bold leading-tight">{title}</h2>
-                <p className="text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed">{description}</p>
+                <p className="text-[#bab29c] text-sm leading-relaxed">{description}</p>
             </div>
 
             <div className="mt-auto pt-2 flex items-center text-[#f4c025] font-bold text-sm">

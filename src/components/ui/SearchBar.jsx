@@ -17,14 +17,14 @@ export default function SearchBar({ placeholder = "Stichwort eingeben...", onSea
             <label className="flex flex-col w-full">
                 <span className="sr-only">Suche</span>
                 <div className="flex w-full h-14 items-stretch rounded-xl overflow-hidden shadow-lg focus-within:outline-none">
-                    <div className="text-[#f4c025] bg-white dark:bg-[#393528] flex items-center justify-center px-3 border-0">
+                    <div className="text-[#f4c025] bg-[#393528] flex items-center justify-center px-3 border-0">
                         <span className="material-symbols-outlined">search</span>
                     </div>
                     <input
                         type="text"
                         value={query}
                         onChange={(e) => setQuery(e.target.value)}
-                        className="flex w-full border-none border-l-0 border-r-0 bg-white dark:bg-[#393528] text-slate-900 dark:text-white focus:ring-0 focus:outline-none px-4 text-lg font-normal placeholder:text-slate-400 dark:placeholder:text-[#bab29c]"
+                        className="flex w-full border-none border-l-0 border-r-0 bg-[#393528] text-white focus:ring-0 focus:outline-none px-4 text-lg font-normal placeholder:text-[#bab29c]"
                         placeholder={placeholder}
                     />
                     <button

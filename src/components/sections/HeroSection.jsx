@@ -10,7 +10,7 @@ export default function HeroSection({ onSearch }) {
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">
                 Wie können wir Ihnen helfen?
             </h1>
-            <p className="text-slate-600 dark:text-[#bab29c] mb-6 text-sm sm:text-base">
+            <p className="text-[#bab29c] mb-6 text-sm sm:text-base">
                 Suchen Sie in unserem Experten-Wissen zum Berufsunfähigkeitsrecht.
             </p>
             <SearchBar
