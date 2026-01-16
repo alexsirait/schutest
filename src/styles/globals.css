@@ -63,8 +63,13 @@ html {
 
 body {
   font-family: var(--font-display);
-  background-color: var(--color-bg-light);
-  color: var(--color-text-primary-light);
+  /* Set dark mode as default for Safari compatibility */
+  /* Fallback colors for older Safari versions */
+  background-color: #181611;
+  color: #ffffff;
+  /* CSS variable colors (for modern browsers) */
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary-dark);
   min-height: 100vh;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -75,12 +80,13 @@ body {
 }
 
 
-/* Dark Mode */
-.dark body,
-body.dark {
-  background-color: var(--color-bg-dark);
-  color: var(--color-text-primary-dark);
+/* Light Mode Override (if needed in future) */
+.light body,
+body.light {
+  background-color: var(--color-bg-light);
+  color: var(--color-text-primary-light);
 }
+
 
 /* ===================================
    UTILITY CLASSES

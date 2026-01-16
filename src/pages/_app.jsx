@@ -60,7 +60,7 @@ export default function App({ Component, pageProps }) {
             {loading ? (
                 <LoadingScreen />
             ) : (
-                <div className="dark min-h-screen flex flex-col animate-fade-in">
+                <div className="min-h-screen flex flex-col animate-fade-in">
                     <Header />
                     <main className="flex-1 max-w-screen-xl mx-auto w-full pb-12">
                         <Component {...pageProps} />
