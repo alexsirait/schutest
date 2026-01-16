@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Desktop: BU Knowledge Hub</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f4c025",
+                        "background-light": "#f8f8f5",
+                        "background-dark": "#181611",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-white min-h-screen">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-slate-200 dark:border-[#393528]">
+<div class="flex items-center p-4 justify-between max-w-screen-xl mx-auto">
+<div class="flex items-center gap-3">
+<div class="text-primary" style="font-size: 24px;">
+<span class="material-symbols-outlined">balance</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-tight">BU Knowledge Hub</h2>
+</div>
+<div class="flex items-center gap-4">
+<button class="p-2 hover:bg-slate-100 dark:hover:bg-[#393528] rounded-full transition-colors">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-screen-xl mx-auto pb-12">
+<!-- Hero Search Section -->
+<div class="px-4 pt-8 pb-4 text-center">
+<h1 class="text-3xl font-bold mb-2">Wie können wir Ihnen helfen?</h1>
+<p class="text-slate-600 dark:text-[#bab29c] mb-6">Suchen Sie in unserem Experten-Wissen zum Berufsunfähigkeitsrecht.</p>
+<div class="max-w-2xl mx-auto">
+<label class="flex flex-col w-full">
+<div class="flex w-full h-14 items-stretch rounded-xl overflow-hidden shadow-lg">
+<div class="text-primary bg-white dark:bg-[#393528] flex items-center justify-center pl-5">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full border-none bg-white dark:bg-[#393528] text-slate-900 dark:text-white focus:ring-0 px-4 text-lg font-normal placeholder:text-slate-400 dark:placeholder:text-[#bab29c]" placeholder="Stichwort eingeben (z.B. Leistungsantrag)..." value=""/>
+<button class="bg-primary hover:bg-primary/90 text-background-dark px-6 font-bold transition-colors">
+                            Suchen
+                        </button>
+</div>
+</label>
+</div>
+</div>
+<!-- Category Chips -->
+<div class="flex gap-3 px-4 py-6 overflow-x-auto no-scrollbar justify-start md:justify-center">
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary text-background-dark px-6 cursor-pointer">
+<p class="text-sm font-bold">Alle Themen</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#393528] px-6 cursor-pointer hover:bg-primary/20 transition-colors">
+<p class="text-sm font-medium">Antrag</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#393528] px-6 cursor-pointer hover:bg-primary/20 transition-colors">
+<p class="text-sm font-medium">Ablehnung</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#393528] px-6 cursor-pointer hover:bg-primary/20 transition-colors">
+<p class="text-sm font-medium">Kosten</p>
+</div>
+<div class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-full bg-slate-200 dark:bg-[#393528] px-6 cursor-pointer hover:bg-primary/20 transition-colors">
+<p class="text-sm font-medium">Rechtsschutz</p>
+</div>
+</div>
+<!-- Featured Grid -->
+<div class="px-4 py-6">
+<h3 class="text-xl font-bold mb-6 border-l-4 border-primary pl-3">Themenbereiche</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+<!-- Card 1 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#544e3b] bg-white dark:bg-[#27241b] p-6 hover:shadow-xl transition-all group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-background-dark transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px;">description</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-lg font-bold leading-tight">Antrag</h2>
+<p class="text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed">Vom ersten Formular bis zur Einreichung. Wir zeigen Ihnen, wie der Prozess reibungslos verläuft.</p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary font-bold text-sm">
+                        Mehr erfahren <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#544e3b] bg-white dark:bg-[#27241b] p-6 hover:shadow-xl transition-all group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-red-500/10 flex items-center justify-center text-red-500 group-hover:bg-red-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px;">cancel</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-lg font-bold leading-tight">Ablehnung</h2>
+<p class="text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed">Versicherung zahlt nicht? Strategien für den Widerspruch und rechtliche Durchsetzung Ihrer Ansprüche.</p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary font-bold text-sm">
+                        Mehr erfahren <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#544e3b] bg-white dark:bg-[#27241b] p-6 hover:shadow-xl transition-all group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-green-500/10 flex items-center justify-center text-green-500 group-hover:bg-green-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px;">payments</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-lg font-bold leading-tight">Kosten</h2>
+<p class="text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed">Transparente Honorare, Anwaltsgebühren und Gerichtskosten im Überblick erklärt.</p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary font-bold text-sm">
+                        Mehr erfahren <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#544e3b] bg-white dark:bg-[#27241b] p-6 hover:shadow-xl transition-all group cursor-pointer">
+<div class="w-12 h-12 rounded-lg bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-colors">
+<span class="material-symbols-outlined" style="font-size: 32px;">verified_user</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-lg font-bold leading-tight">Rechtsschutz</h2>
+<p class="text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed">Wann die Rechtsschutzversicherung greift und wie Sie eine Deckungszusage erhalten.</p>
+</div>
+<div class="mt-auto pt-2 flex items-center text-primary font-bold text-sm">
+                        Mehr erfahren <span class="material-symbols-outlined ml-1 text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SEO Long-form Content Section -->
+<div class="px-4 py-12 max-w-4xl">
+<article class="prose prose-slate dark:prose-invert max-w-none">
+<h2 class="text-2xl font-bold mb-6 text-slate-900 dark:text-white">Berufsunfähigkeit: Was Sie im Ernstfall wissen müssen</h2>
+<div class="space-y-6 text-slate-700 dark:text-[#bab29c] leading-relaxed">
+<p>
+                        Die Berufsunfähigkeitsversicherung (BU) gehört zu den wichtigsten privaten Absicherungen. Doch wenn der Ernstfall eintritt und die Gesundheit die Ausübung des Berufs unmöglich macht, beginnt oft ein bürokratischer Hürdenlauf. Versicherer prüfen Anträge extrem akribisch, was häufig zu Verzögerungen oder Ablehnungen führt.
+                    </p>
+<h3 class="text-xl font-semibold text-slate-900 dark:text-white">Häufige Gründe für eine Ablehnung</h3>
+<p>
+                        In der Praxis beobachten wir immer wieder drei Hauptgründe für verweigerte Leistungen: Verletzung der vorvertraglichen Anzeigepflicht (falsche Angaben bei Vertragsschluss), Nichterreichen des 50%-Grades der Berufsunfähigkeit oder die sogenannte Verweisungsklausel.
+                    </p>
+<div class="bg-primary/5 border-l-4 border-primary p-6 rounded-r-lg my-8">
+<h4 class="font-bold text-slate-900 dark:text-white mb-2">Experten-Tipp</h4>
+<p class="text-sm italic">„Reichen Sie niemals einen Leistungsantrag ohne vorherige anwaltliche Prüfung ein. Ein kleiner Fehler in der Selbstauskunft kann den Anspruch für immer gefährden.“</p>
+</div>
+<p>
+                        Unser Knowledge Hub bietet Ihnen detaillierte Leitfäden, um diese Stolperfallen zu vermeiden. Wir erklären Ihnen die rechtlichen Grundlagen des VVG (Versicherungsvertragsgesetz) und geben praktische Tipps für die Kommunikation mit Ihrer Versicherung.
+                    </p>
+</div>
+</article>
+</div>
+<!-- Internal Link Module / CTA -->
+<div class="mx-4 p-8 rounded-2xl bg-gradient-to-br from-primary to-yellow-600 text-background-dark shadow-2xl relative overflow-hidden">
+<div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="max-w-md">
+<h3 class="text-2xl font-black mb-2">Kostenlose Erstberatung</h3>
+<p class="font-medium opacity-90">Lassen Sie Ihren Fall von unseren spezialisierten Anwälten prüfen. Wir klären Ihre Chancen innerhalb von 24 Stunden.</p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+<button class="bg-background-dark text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">calendar_today</span>
+                        Termin vereinbaren
+                    </button>
+<button class="bg-white/20 backdrop-blur-md text-background-dark border border-background-dark/20 px-8 py-4 rounded-xl font-bold hover:bg-white/30 transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">call</span>
+                        Rückruf anfordern
+                    </button>
+</div>
+</div>
+<!-- Decorative Icon Background -->
+<div class="absolute -right-10 -bottom-10 opacity-10 pointer-events-none">
+<span class="material-symbols-outlined" style="font-size: 200px;">gavel</span>
+</div>
+</div>
+<!-- FAQ Section for SEO -->
+<div class="px-4 py-12">
+<h3 class="text-xl font-bold mb-8">Häufig gestellte Fragen (FAQ)</h3>
+<div class="space-y-4">
+<details class="group bg-white dark:bg-[#27241b] rounded-xl border border-slate-200 dark:border-[#393528] overflow-hidden">
+<summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+<span class="font-bold">Wie lange dauert die Prüfung eines BU-Antrags?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-5 pt-0 text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed border-t border-slate-100 dark:border-[#393528]">
+                        Gesetzlich ist keine feste Frist vorgeschrieben, üblich sind jedoch 3-6 Monate. Bei anwaltlicher Begleitung lässt sich dieser Prozess oft beschleunigen, da Rückfragen der Versicherung proaktiv vorgebeugt wird.
+                    </div>
+</details>
+<details class="group bg-white dark:bg-[#27241b] rounded-xl border border-slate-200 dark:border-[#393528] overflow-hidden">
+<summary class="flex items-center justify-between p-5 cursor-pointer list-none">
+<span class="font-bold">Kann ich trotz Ablehnung noch Leistungen erhalten?</span>
+<span class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+</summary>
+<div class="p-5 pt-0 text-slate-600 dark:text-[#bab29c] text-sm leading-relaxed border-t border-slate-100 dark:border-[#393528]">
+                        Ja, eine Ablehnung ist oft nur der Beginn der Verhandlung. Durch einen begründeten Widerspruch oder eine Klage vor dem Landgericht können viele Ablehnungen revidiert werden. Die Erfolgsquote bei spezialisierten Kanzleien ist hoch.
+                    </div>
+</details>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 dark:bg-[#12110d] border-t border-slate-200 dark:border-[#393528] py-12 px-4">
+<div class="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+<div>
+<div class="flex items-center gap-2 mb-4">
+<span class="material-symbols-outlined text-primary">balance</span>
+<span class="font-bold text-lg">BU-Rechtsanwälte.de</span>
+</div>
+<p class="text-sm text-slate-600 dark:text-[#bab29c]">Ihre Experten für Berufsunfähigkeitsrecht. Deutschlandweite Vertretung gegenüber Versicherern.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Quick Links</h4>
+<ul class="text-sm space-y-2 text-slate-600 dark:text-[#bab29c]">
+<li><a class="hover:text-primary transition-colors" href="#">Impressum</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Datenschutz</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Über uns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Kontakt</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Newsletter</h4>
+<p class="text-sm text-slate-600 dark:text-[#bab29c] mb-4">Erhalten Sie monatlich rechtliche Updates.</p>
+<div class="flex gap-2">
+<input class="form-input flex-1 bg-white dark:bg-[#27241b] border border-slate-200 dark:border-[#393528] rounded-lg text-sm" placeholder="E-Mail Adresse" type="email"/>
+<button class="bg-primary text-background-dark px-4 py-2 rounded-lg font-bold text-sm">Abonnieren</button>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

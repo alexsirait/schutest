@@ -1,0 +1,177 @@
+@import "tailwindcss";
+
+/* ===================================
+   DESIGN TOKENS & CSS VARIABLES
+   =================================== */
+:root {
+  /* Brand Colors */
+  --color-primary: #f4c025;
+  --color-primary-hover: #daa91f;
+  
+  /* Background Colors - Light Mode */
+  --color-bg-light: #f8f8f5;
+  --color-bg-card-light: #ffffff;
+  --color-bg-muted-light: #f1f5f9;
+  
+  /* Background Colors - Dark Mode */
+  --color-bg-dark: #181611;
+  --color-bg-card-dark: #27241b;
+  --color-bg-muted-dark: #393528;
+  --color-bg-footer-dark: #12110d;
+  
+  /* Border Colors */
+  --color-border-light: #e2e8f0;
+  --color-border-dark: #393528;
+  --color-border-card-dark: #544e3b;
+  
+  /* Text Colors */
+  --color-text-primary-light: #0f172a;
+  --color-text-secondary-light: #475569;
+  --color-text-primary-dark: #ffffff;
+  --color-text-secondary-dark: #bab29c;
+  
+  /* Accent Colors */
+  --color-red: #ef4444;
+  --color-green: #22c55e;
+  --color-blue: #3b82f6;
+  
+  /* Typography */
+  --font-display: "Public Sans", system-ui, sans-serif;
+  
+  /* Spacing */
+  --spacing-container: clamp(1rem, 5vw, 2rem);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-normal: 300ms ease;
+}
+
+/* Tailwind Theme Integration */
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-background: var(--color-bg-light);
+  --color-foreground: var(--color-text-primary-light);
+  --font-sans: var(--font-display);
+}
+
+/* ===================================
+   BASE STYLES
+   =================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  background-color: var(--color-bg-light);
+  color: var(--color-text-primary-light);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark Mode */
+.dark body,
+body.dark {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary-dark);
+}
+
+/* ===================================
+   UTILITY CLASSES
+   =================================== */
+
+/* Hide scrollbar but keep functionality */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* ===================================
+   COMPONENT STYLES
+   =================================== */
+
+/* FAQ Accordion */
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details summary {
+  list-style: none;
+}
+
+/* Gradient text helper */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-primary), #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===================================
+   RESPONSIVE BREAKPOINTS
+   Mobile-first approach
+   =================================== */
+
+/* Container max widths */
+.container-app {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--spacing-container);
+  padding-right: var(--spacing-container);
+}
+
+/* ===================================
+   ANIMATIONS
+   =================================== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ===================================
+   PROSE STYLES FOR CONTENT
+   =================================== */
+.prose-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.prose-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-content p {
+  margin-bottom: 1rem;
+}
+
+.prose-content p:last-child {
+  margin-bottom: 0;
+}
